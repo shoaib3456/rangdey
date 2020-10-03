@@ -281,13 +281,13 @@ nav a:hover,.menu:hover{
 
 /* footer styling here */
 footer{
-    margin-top: 50px;
     display: flex !important;
     justify-content: space-between;
     padding: 20px;
     color: rgb(255, 255, 255);
     background-color: rgb(14, 14, 14);
     flex-wrap: wrap;
+    margin-top: 200px;
 }
 footer a{
     color:rgb(139, 139, 139);

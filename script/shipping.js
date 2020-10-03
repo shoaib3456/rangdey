@@ -79,7 +79,7 @@ function validation() {
         validCount++
     }
     addShippinInfo()
-    window.location ='index.html'
+    // window.location ='index.html'
 
 }
 
@@ -145,5 +145,6 @@ function addShippinInfo(){
     swal("Thank You " + oldprodData.fname, "Your order is successfully done", "success");
     
     }
+    window.location = "cart.html"
 
 }

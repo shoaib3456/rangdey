@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangdey | Cart</title>
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/searchProducts.css">
+    <link rel="shortcut icon" href="logo/monogram.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b690895109.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-light">
+    <!-- header code  -->
+<header>
+    <div id="left-div">
+      <i class="fas fa-bars"></i>
+      <img src="logo/logo.png" alt="Rangdey" id="logo">
+    </div>
+  
+      <nav>
+          <a href="index.html">Home</a>|
+  
+          <div href="woman.html" class="menu">
+            Women
+            <div class="nav-drop-down">
+              <a href="woman_rozana.html">Rozana</a>
+              <a href="woman_poshak-e-khaas.html">Poshak e Khaas</a>
+              <a href="woman_unstitched.html">Unstitched</a>
+            </div>
+          </div>|
+  
+          <div href="man.html" class="menu">
+            Men 
+            <div class="nav-drop-down">
+              <a href="man_unstitched.html">Unstitched</a>
+              <a href="man_urban-libaas.html">Urban libaas</a>
+              <a href="man_casual.html">Casual</a>
+            </div>
+          </div>|
+  
+          <div href="kids.html" class="menu">
+            Kids 
+            <div class="nav-drop-down">
+              <a href="kids.html">Eastern Wear</a>
+              <a href="kids.html">Western Wear</a>
+            </div>
+          </div>|
+  
+          <a href="sale.html">Sale</a> |
+          <a href="blog.html">Blog</a>
+      </nav>
+  
+      <div id="right-side-div">
+              <i class="fas fa-search"></i>
+          <div id="cart-div">  
+              <div id="count-cart-items">2</div>
+               <i class="fas fa-shopping-cart"></i>
+              </div>
+          <i class="fas fa-user-circle"></i>
+      </div>
+  </header>
+  
+  <div id="drop-down-menu">
+          <span>Categories</span>
+          <a href="index.html">home</a>
+          
+          <div class="drop-down-headinges">
+                  Women
+                  <div class="drop-down-sub-headinges">
+                        <a href="woman_rozana.html">Rozana</a>
+                        <a href="woman_poshak-e-khaas.html">Poshak e Khaas</a>
+                        <a href="woman_unstitched.html">Unstitched</a>
+                  </div>
+          </div>
+  
+          <div class="drop-down-headinges">
+                  
+            Men
+                  <div class="drop-down-sub-headinges">
+                    <a href="man_unstitched.html">Unstitched</a>
+                    <a href="man_urban-libaas.html">Urban libaas</a>
+                    <a href="man_casual.html">Casual</a>
+                  </div>
+          </div>
+  
+          <div class="drop-down-headinges">
+                  Kids
+                  <div class="drop-down-sub-headinges">
+                    <a href="kids.html">Eastern Wear</a>
+                    <a href="kids.html">Western Wear</a>
+                  </div>
+          </div>
+  
+          <a href="sale.html">Sale</a>
+          <a href="blog.html">Blog</a>
+  </div>
+  
+  <div id="search-canvas">
+      <div id="cross-button"><img src="logo/monogram.png"><span id="cross-btn">✕</span></div>
+      <input type="text" name="" id="searchBar" placeholder="Search Your Products..." autocomplete="off">
+      <ul id="search-items-container">
+      </ul>
+      <span id="resualtNotFound">Result Not Found..</span>
+  
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 330" class="wave-svg"><path fill="#ffb5c6" fill-opacity="1" d="M0,96L80,200C160,160,320,224,480,213.3C640,203,800,117,960,117.3C1120,117,1280,203,1360,245.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-svg"><path fill="#ff86a3" fill-opacity="1" d="M0,32L48,32C96,32,192,32,288,74.7C384,117,480,203,576,218.7C672,235,768,181,864,149.3C960,117,1056,107,1152,106.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-svg"><path fill="#ef476f" fill-opacity="1" d="M0,128L60,122.7C120,117,240,107,360,138.7C480,171,600,245,720,229.3C840,213,960,107,1080,69.3C1200,32,1320,64,1380,80L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  </div>
+  
+  <form  id="hiddenForm"  action="searchProducts.html" method="GET">
+      <input type="hidden" id ="hiddenInput" name="product">
+  </form>
+    <!-- header code end here  -->
+
+    <div id="emptyCart">
+        Cart Is Empty &nbsp; <i class="fas fa-sad-tear"></i>
+    </div>
+
+    <!-- control bar -->
+    <div id="controls">
+        <span id="cartCon">Cart Items</span>
+        <span id="checkCon">Checkout Items</span>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                    <!-- left side div -->
+                    <div class="col-md-12 col-lg-11 col-11 mx-auto mb-lg-5 mb-5 shadow main_cart">
+
+                        <!-- 1st card item end -->
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- footer code here  -->
+
+       <footer>
+
+        <div class="footer-inner-div">
+          <img src="logo/white-text-logo.png" alt="Rangdey" class="footer-logo">
+          <div class="phone"><span>Phone</span><span>+92 21 345-753-979</span></div>
+          <div class="email"><span>Email</span><span> customercare@Rangdey.com</span></div>
+          <div class="icon">
+            <a href="rangdey/facebook.com"><i class="fab fa-facebook-square"></i> FACEBOOK</a>
+            <a href="rangdey/youtube.com"><i class="fab fa-youtube"></i> YOUTUBE</a>
+            <a href="rangdey/instagram.com"><i class="fab fa-instagram-square"></i> INSTAGRAM</a>
+          </div>
+        </div>
+
+        <div class="footer-inner-div">
+          <span class="footer-headings">INFORMATION</span>
+          <ul>
+            <a href="footer-about-us.html">About Us</a>
+            <a href="footer-terms&condition.html">Terms & Conditions</a>
+            <a href="footer-shipping-policy.html">Shipping Information</a>
+          </ul>
+        </div>
+
+        <div class="footer-inner-div">
+          <span class="footer-headings">CUTOMER CARE</span>
+          <ul>
+            <a href="footer-contact.html" >Contact Us</a>
+            <a href="footer-privacy-policy.html">Privicy Policy</a>
+            <a href="footer-return-policy.html">Return & Exchange Policy</a>
+          </ul>
+        </div>
+        <div class="footer-inner-div">
+          <span class="footer-headings">NEWSLETTER</span>
+          <input type="text" placeholder="Enter Your Email" id="footerInput">
+          <div class="payment">
+            <span>SECURE PAYMENT THROUGH <br> Cash On Delivery</span>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-end">Copyright Reserved © 2020 </div>
+
+    <form id="hiddenFormInfo" action="redirectProductInfo.html" method="GET">
+        <input type="hidden" id="hiddenInputInfo" name="product">
+    </form>
+
+    <form  id="checkoutForm"  action="checkout.html" method="GET">
+        <input type="hidden" id ="checkoutInput" name="product" value="">
+     </form>
+    <!-- footer end -->
+
+    <script src="script/cart.js"></script>
+    <script src="script/header.js"></script>
+    <!-- cdn bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

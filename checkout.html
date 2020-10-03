@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information</title>
+    <link rel="stylesheet" href="style/shipping.css">
+    <link rel="shortcut icon" href="logo/monogram.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="left" onclick="displayNoneCart()" style="display: none;">
+            <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__icon">
+                <path d="M17.178 13.088H5.453c-.454 0-.91-.364-.91-.818L3.727 1.818H0V0h4.544c.455 0 .91.364.91.818l.09 1.272h13.45c.274 0 .547.09.73.364.18.182.27.454.18.727l-1.817 9.18c-.09.455-.455.728-.91.728zM6.27 11.27h10.09l1.454-7.362H5.634l.637 7.362zm.092 7.715c1.004 0 1.818-.813 1.818-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817zm9.18 0c1.004 0 1.817-.813 1.817-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817z"></path>
+            </svg>
+            <p>Hide order summary</p>
+            <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown" style="transform: rotate(180deg);">
+                <path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"></path>
+            </svg>
+        </div>
+        <div class="left" onclick="displayBlockCart()">
+            <svg width="20" height="19" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__icon">
+                <path d="M17.178 13.088H5.453c-.454 0-.91-.364-.91-.818L3.727 1.818H0V0h4.544c.455 0 .91.364.91.818l.09 1.272h13.45c.274 0 .547.09.73.364.18.182.27.454.18.727l-1.817 9.18c-.09.455-.455.728-.91.728zM6.27 11.27h10.09l1.454-7.362H5.634l.637 7.362zm.092 7.715c1.004 0 1.818-.813 1.818-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817zm9.18 0c1.004 0 1.817-.813 1.817-1.817s-.814-1.818-1.818-1.818-1.818.814-1.818 1.818.814 1.817 1.818 1.817z"></path>
+            </svg>
+            <p>Show order summary</p>
+            <svg width="11" height="6" xmlns="http://www.w3.org/2000/svg" class="order-summary-toggle__dropdown">
+                <path d="M.504 1.813l4.358 3.845.496.438.496-.438 4.642-4.096L9.504.438 4.862 4.534h.992L1.496.69.504 1.812z"></path>
+            </svg>
+        </div>
+        <p>Rs.999.00</p>
+    </header>
+    <div class="container">
+        <div class="user-info">
+            <p><span class="info" style="font-size: 1.3rem; border-bottom: 1px solid rgb(245, 63, 94);">Checkout</span> 
+               
+            <div class="contact-info">
+                <div class="head">
+                    <h2>Contact information</h2>
+                </div>
+                <div class="input-email-phone" name="emailphoneholder">
+                    <input type="text" id="email-phone-no" onkeypress="inputFocus(0, 0)" name="emailphone">
+                    <label for="email-phone-no">Email or mobile phone number</label>
+                </div>
+                <label for="up-to-date">
+                    <input type="checkbox" id="up-to-date">
+                    <span class="checkmark"></span>
+                    Keep me up to date on news and exclusive offers
+                </label>
+            </div>
+            <div class="shipping-info">
+                <h2>Shipping address</h2>
+                <form class="inputs"  name="shippinginfoinputs">
+                    <div>
+                        <input type="text" id="first-name" autocomplete="off" onkeypress="inputFocus(2, 2)" name="firstname">
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div>
+                        <input type="text" id="last-name"  autocomplete="off" onkeypress="inputFocus(3, 3)">
+                        <label for="last-name">Last Name</label>
+                    </div>
+                    <div class="grid-full-width">
+                        <input type="text" id="address"  autocomplete="off" onkeypress="inputFocus(4, 4)" name="address" value="">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="grid-full-width">
+                        <input type="text" id="apartment" autocomplete="off" onkeypress="inputFocus(5, 5)">
+                        <label for="apartment">Apartment, suite, etc (optional)</label>
+                    </div>
+                    <div class="select-holder">
+                        <select oninput="select()">
+                            <option>Karachi</option>
+                            <option>Lahore</option>
+                            <option>Islamabad</option>
+                            <option>Quetta</option>
+                            <option>Peshawar</option>
+                            <option>Muree</option>
+                            <option>Multan</option>
+                            <option>Gawadar</option>
+                            <option>Sialkot</option>
+                            <option>Rahim Yar Khan</option>
+                            <option>Abttobad</option>
+                            <option>Turbat</option>
+                            <option>Sukkur</option>
+                            <option>Hydrabad</option>
+                            <option>Gilgit Baltistan</option>
+                            <option>Sawat</option>
+                        </select>
+                        <div class="select">
+                            <div class="country">
+                                City/Region
+                            </div>
+                            <div class="value">
+                                Karachi
+                            </div>
+                            <div class="arrow">
+                                <i class="fas fa-sort-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="number" maxlength="6"  autocomplete="off"  id="postal-code"  onkeypress="inputFocus(6, 6)" name="postalcode">
+                        <label for="postal-code">Postal code</label>
+                    </div>
+                    <div class="grid-full-width">
+                        <input type="number" id="phone" autocomplete="off" minlength="1" maxlength="11"  onkeypress="inputFocus(7, 7)" name="phone">
+                        <label for="phone">Phone</label>
+                    </div>
+                </form>
+                <div class="save">
+                    <label for="save-next-time">
+                        <input type="checkbox" id="save-next-time">
+                        <span class="checkmark"></span>
+                        Save this information for next time
+                    </label>
+                </div>
+                <div class="shipping-btn-holder">
+                    <button  class="shipping-btn" onclick="validation()">Continue to shipping <i class="fas fa-shipping-fast"></i></button>
+                </div>
+            </div>
+            <hr class="last">
+            <h6 class="rights">All rights reserved by <img src="logo/monogram.png">Rangdey</h6>
+        </div>
+        <div class="cart-info">
+            <div class="cart-item">
+                <div class="name-img">
+                    <div class="img-container">
+                        <img src="images/Dont give up.PNG" alt="Shalwar Kameez" id="prodImage">
+                        <div class="qty" id="prodQuan">1</div>
+                    </div>
+                    <h5 class="name-suit">Shalwar Kameez</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="discount">
+                <div>
+                    <input type="text" id="discount-input" onkeypress="inputFocus(9, 9)" style="text-transform:uppercase;">
+                    <label for="discount-input">Dicount code</label>
+                </div>
+                <button onclick="couponBtn()">Apply</button>
+            </div>
+            <p style="font-size: .70rem; padding-top: 5px;">Use Coupon Code For Discount -10% <span style="font-size: .75rem; color:rgb(255, 62, 98); text-decoration: underline;"> K2-TEAM-A</span></p>
+            <hr>
+            <div class="subtotal">
+                <h3>Subtotal</h3>
+                <h4 id="prodPrice">Rs.999.00</h4>
+            </div>
+            <div class="shipping">
+                <h3>Shipping Charges</h3>
+                <h4 style="font-size: 11px;">RS. 100</h4>
+            </div>
+            <h4 style="font-size: 11px;">Order Will Deliver in 7 Woking Days</h4>
+            <hr>
+            <div class="total">
+                <h3>Total</h3>
+                <div class="total-price">
+                    <h4>PKR </h4>
+                    <h2 id="prodTot"> Rs.999.00</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/shipping.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/d8d2cc0cd4.js" crossorigin="anonymous"></script>
+</body>
+</html>
